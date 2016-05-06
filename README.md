@@ -24,7 +24,9 @@ The _displayData_ function maps each row to a 20 pixel by 20 pixel grayscale ima
 # Files
 ## Main
 _ex3.m_ - Octave/Matlab script that steps through the Multi-Class Classification exercise
+
 *ex3_nn.m* - Octave/Matlab script thet steps through the Neural Network execrise
+
 _ex4.m_ - Octave/Matlab script that steps through the Neural Network Learning exercise
 
 ## Data
