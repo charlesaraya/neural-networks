@@ -1,19 +1,16 @@
-# Multi-Class Classification
+# Neural Networks
 Automated handwritten recognition is widely used nowadays - from recognizing of zip codes on mail envelopes to recognizing amounts written on bank checks (Is that still a thing?).
 
 There's several techniques that can be used for this classification task. We'll use logistic regression and neural networks to recognize handwritten digits (from 0 to 9).
 
-# Neural Networks
 Multi-class Logistic Regression helps us to recognze handwritten digits. However, it cannot form complex hypothesis as it is only a linear classifier.
 
-A Neural Network will be able to represent complex models that form non-linear hypothesis. Through a feedforward propagation algorithm and the parameters of an already trained neural network, we'll be able to predict handwritten digits (in *ex3_nn.m*).
+Neural Networks are able to represent complex models that form non-linear hypothesis. Through a feedforward propagation algorithm and the parameters of an already trained neural network, we'll be able to predict handwritten digits.
 
 # Dataset
-The dataset in _ex3data1.mat_ contains 5000 training examples of handwritten digits in an Octave/Matlab matrix format. This dataset is loaded in memory in _ex3.m_.
+The dataset in _data.mat_ contains 5000 training examples of handwritten digits in an Octave/Matlab matrix format.
 
-Each training example is a 20 pixel by 20 pixel grayscale image of a digit. Each pixel is represented by a floating point number indicating its grayscale intensity.
-
-The 20 by 20 matrix of pixels is unfolded into a 400-dimensional vector, becoming a single row in our data matrix. This gives us a 5000 by 400 matrix where every row is a training example for a handwritten digit image.
+Each training example is a 20 pixel by 20 pixel grayscale image of a digit. Each pixel is represented by a floating point number indicating its grayscale intensity. The 20 by 20 matrix of pixels is unrolled into a 400-dimensional vector, becoming a single row in our data matrix. This gives us a 5000 by 400 matrix where every row is a training example for a handwritten digit image.
 
 ### Exercise 3
 The second part of the training set is a 5000-dimensional vector that contains labels for the training set. Each label maps the 10 possible digits to a certain value, so digits from **1** to **9** are labeled as **1** to **9**, while **0** is labeled as **10** (we won't use a zero index to make things more compatible with Octave/Matlab indexing).
